@@ -1,7 +1,8 @@
 body {
   font-family : sans-serif;
-  font-size : 16px;
+  font-size : 20px;
   line-height : 1.5em;
+  color : white;
 }
 #submit{
   display : none;
@@ -13,6 +14,13 @@ body {
   margin-bottom : 20px;
   padding : 15px 25px;
   align-content: center;
+}
+
+.container{
+  background-image: url(../images/back.jpg);
+}
+#main-page{
+  display : none;
 }
 
 /*MODAL WINDOW STYLING.........................................................*/

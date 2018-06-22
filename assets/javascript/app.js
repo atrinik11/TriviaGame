@@ -3,7 +3,6 @@ var timeLeft = 10;
 var intervalId;
 var correctAns = 0;
 var wrongAns = 0;
-var questionContainer = document.getElementById("question");
 
 console.log("hello");
 //This function displayTimer is called when the start button is clicked......................
@@ -23,6 +22,7 @@ function displayTimer() {
         //document.getElementById("question").innerHTML = question;
         document.getElementById("submit").style.display = 'block';
         console.log("I'm inside run");
+
     }
     //  The decrement function..................................................
     function decrement() {
@@ -46,6 +46,7 @@ function displayTimer() {
      }
      //  Execute the run & questionPage function.
      run();
+     isChecked();
 }   //dispalyTimer() end bracket................................................
 
 //This function will be called in the modal window when the timer is 0 or the submit button is clicked
@@ -79,10 +80,15 @@ function replay() {
 }
 
 function isChecked() {
-  var correctChecked = document.getElementById("correctA").checked;
-  correctAns ++;
-  var incorrectChecked = document.getElementById("incorrectA").checked;
-  wrongAns ++;
-  if ()
+  for (var i = 1; i < 11; i++){
+    var radio = getElementById("A");
+  }
+  for (var x = 0; x < radio.length; x++){
+    var answers = radio[x];
+    if (answers.value === "correct"){
+      correctAns++;
+    } else {
+      wrongAns++;
+    }
+  }
 }
-////I HAVE TO CREATE A FOR LOOP BUT DONT KNOW HOW TO DO IT...
