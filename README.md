@@ -13,6 +13,8 @@ How users can get started with the project?
 Who maintains and contribute to the project?
     This project is maintained by Reena Mahapatra.
 
+Referance: mainly from youtube videos.
+
 
 Pseudocode:-
 When the page loads with the click of the button, the countdown timer starts.
@@ -27,3 +29,9 @@ set the timer to 60
 create a run function
 create a stop Function
 create a decrement function where the timer is decremented and the stop function is called when the timer is 0 and a popup message is displayed.
+
+
+
+Could not work on the validation part. the for loop i created for the the function isChecked(), need to work on it.
+
+Till now the timer is running.

@@ -1,5 +1,5 @@
 //Initializing the variables....................................
-var timeLeft = 10;
+var timeLeft = 60;
 var intervalId;
 var correctAns = 0;
 var wrongAns = 0;
@@ -16,13 +16,12 @@ function displayTimer() {
         document.getElementById("instruction").style.display = 'none';
         clearInterval(intervalId);
         //Displaying the timer's initial value.....................................
-        document.getElementById("timer").innerHTML = "<h2>Time Left: " + 10 + "</h2>";
+        document.getElementById("timer").innerHTML = "<h2>Time Left: " + 60 + "</h2>";
         intervalId = setInterval(decrement, 1000);
         //Calling the listQuestion function.....................................
         //document.getElementById("question").innerHTML = question;
         document.getElementById("submit").style.display = 'block';
         console.log("I'm inside run");
-
     }
     //  The decrement function..................................................
     function decrement() {
@@ -61,7 +60,7 @@ function finalScore() {
 }
 //This function is called when the Main Page button in modal window is clicked, which takes you to the instruction page.....................
 function mainpage() {
-  timeLeft = 10;
+  timeLeft = 60;
   correctAns = 0;
   wrongAns = 0;
   document.getElementById("instruction").style.display = 'block';
@@ -81,7 +80,7 @@ function replay() {
 
 function isChecked() {
   for (var i = 1; i < 11; i++){
-    var radio = getElementById("A");
+    var radio = document.getElementById("A");
   }
   for (var x = 0; x < radio.length; x++){
     var answers = radio[x];

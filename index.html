@@ -15,7 +15,7 @@
                 <p><lead>There is a specific time limit within which the user have to answer the questions.</lead></p>
                 <p><lead>Once the time is 0, the game is over alternatively if the user answers all question before the timer is 0, the game is over.</lead></p>
                 <p><lead>To begin the game the user have to click on the start button on the screen.</lead></p>
-                <button onclick = "displayTimer()" "btn btn-lg">START</button>
+                <button onclick = "displayTimer()" "btn btn-lg" id = "start">START</button>
             </div>
             <div class = "container" id = "main-page">
                 <div id = "timer"></div>
@@ -73,7 +73,7 @@
                   <input type = "radio" name = "a10" value = "correct" id = "A">Peninsula</input><br>
                   <input type = "radio" name = "a10" value = "incorrect" id = "A">Island</input>
                 </form>
-                <button  id = "submit" btn "btn-lg">Submit</button>
+                <button  onclick = "finalScore()" id = "submit" btn "btn-lg">Submit</button>
             </div>
             <div id = "modal-window" class = "modal1">
                 <div id = "modal2" class = "modal-message"></div>
